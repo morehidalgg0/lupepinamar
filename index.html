@@ -83,6 +83,134 @@
 
         </section>
 
+        <!-- Dynamic Skincare Routine Quiz Section -->
+        <section id="quiz" class="section quiz-section">
+            <div class="container">
+                <div class="quiz-box">
+                    <div class="quiz-header">
+                        <span class="quiz-tag">Test Interactivo</span>
+                        <h2>Descubrí tu rutina y tratamientos ideales</h2>
+                        <p>Respondé estas 3 preguntas rápidas y nuestro sistema te recomendará los tratamientos de Lupe Pinamar y productos que mejor se adaptan a tu tipo de piel.</p>
+                    </div>
+
+                    <div class="quiz-container" id="quiz-wrapper">
+                        
+                        <!-- Step 1 -->
+                        <div class="quiz-step active" data-step="1">
+                            <div class="step-progress">Paso 1 de 3</div>
+                            <h3>¿Cómo sentís tu piel habitualmente durante el día?</h3>
+                            <div class="quiz-options">
+                                <button class="quiz-option-btn" data-value="seca">
+                                    <span class="option-title">Seca / Tirante</span>
+                                    <span class="option-desc">Siento descamación, falta de brillo y tirantez constante.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="mixta_grasa">
+                                    <span class="option-title">Mixta a Grasa</span>
+                                    <span class="option-desc">Brillos en zona T (frente, nariz, mentón) o grasitud generalizada.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="sensible">
+                                    <span class="option-title">Sensible / Rojeces</span>
+                                    <span class="option-desc">Se irrita fácil, se enrojece con cambios de clima o productos.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="madura">
+                                    <span class="option-title">Madura / Con líneas</span>
+                                    <span class="option-desc">Noto pérdida de firmeza, elasticidad y líneas de expresión marcadas.</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="quiz-step" data-step="2">
+                            <div class="step-progress">Paso 2 de 3</div>
+                            <h3>¿Cuál es tu principal preocupación o lo que te gustaría mejorar?</h3>
+                            <div class="quiz-options">
+                                <button class="quiz-option-btn" data-value="lineas_arrugas">
+                                    <span class="option-title">Líneas de expresión y Flacidez</span>
+                                    <span class="option-desc">Quiero un efecto lifting, mayor firmeza y rellenar arrugas.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="manchas_tono">
+                                    <span class="option-title">Manchas o Tono irregular</span>
+                                    <span class="option-desc">Quiero unificar el color de mi piel y atenuar hiperpigmentaciones.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="poros_acne">
+                                    <span class="option-title">Poros abiertos, Puntos negros o Acné</span>
+                                    <span class="option-desc">Quiero limpiar en profundidad, controlar sebo y suavizar poros.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="deshidratacion_opacidad">
+                                    <span class="option-title">Deshidratación y Falta de luminosidad</span>
+                                    <span class="option-desc">Siento la piel apagada, cansada y con falta de vitalidad.</span>
+                                </button>
+                            </div>
+                            <div class="quiz-navigation">
+                                <button class="btn btn-outline btn-sm quiz-prev-btn"><i class="fa-solid fa-arrow-left"></i> Anterior</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="quiz-step" data-step="3">
+                            <div class="step-progress">Paso 3 de 3</div>
+                            <h3>¿Cómo es tu rutina de skincare actual en casa?</h3>
+                            <div class="quiz-options">
+                                <button class="quiz-option-btn" data-value="no_tengo">
+                                    <span class="option-title">No tengo rutina</span>
+                                    <span class="option-desc">Solo me lavo la cara con agua o jabón común de ducha.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="basica">
+                                    <span class="option-title">Básica</span>
+                                    <span class="option-desc">Uso un limpiador facial y a veces crema hidratante.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="intermedia">
+                                    <span class="option-title">Intermedia</span>
+                                    <span class="option-desc">Hago limpieza, hidratación y uso protector solar casi todos los días.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="avanzada">
+                                    <span class="option-title">Avanzada / Completa</span>
+                                    <span class="option-desc">Uso limpiador, tónicos, sérums específicos, crema y protector solar diario.</span>
+                                </button>
+                            </div>
+                            <div class="quiz-navigation">
+                                <button class="btn btn-outline btn-sm quiz-prev-btn"><i class="fa-solid fa-arrow-left"></i> Anterior</button>
+                            </div>
+                        </div>
+
+                        <!-- Result Step -->
+                        <div class="quiz-step result-step" data-step="result">
+                            <div class="result-icon"><i class="fa-regular fa-sparkles"></i></div>
+                            <h3>¡Tu diagnóstico personalizado está listo!</h3>
+                            
+                            <div class="result-details">
+                                <div class="result-block">
+                                    <h4><i class="fa-solid fa-heart-pulse"></i> Tu Piel y Objetivo:</h4>
+                                    <p id="result-summary-text">Cargando diagnóstico...</p>
+                                </div>
+                                
+                                <div class="result-block">
+                                    <h4><i class="fa-solid fa-sparkles"></i> Tratamientos Lupe recomendados:</h4>
+                                    <ul id="recommended-treatments-list">
+                                        <!-- Will be filled by JS -->
+                                    </ul>
+                                </div>
+
+                                <div class="result-block">
+                                    <h4><i class="fa-solid fa-droplet"></i> Plan de Skincare sugerido:</h4>
+                                    <p id="recommended-products-text">Cargando recomendación de productos...</p>
+                                </div>
+                            </div>
+
+                            <div class="result-cta-box">
+                                <p>Para armar tu rutina detallada, evaluar tu piel en camilla y adquirir los productos indicados, agenda un asesoramiento profesional presencial.</p>
+                                <button class="btn btn-primary" id="send-quiz-whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i> Reservar y Enviar Diagnóstico
+                                </button>
+                                <button class="btn btn-outline btn-sm" id="reset-quiz-btn" style="margin-top: 15px;">Realizar el test de nuevo</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Treatments Section -->
         <section id="tratamientos" class="section treatments-section">
             <div class="container">
@@ -284,134 +412,6 @@
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </section>
-
-        <!-- Dynamic Skincare Routine Quiz Section -->
-        <section id="quiz" class="section quiz-section">
-            <div class="container">
-                <div class="quiz-box">
-                    <div class="quiz-header">
-                        <span class="quiz-tag">Test Interactivo</span>
-                        <h2>Descubrí tu rutina y tratamientos ideales</h2>
-                        <p>Respondé estas 3 preguntas rápidas y nuestro sistema te recomendará los tratamientos de Lupe Pinamar y productos que mejor se adaptan a tu tipo de piel.</p>
-                    </div>
-
-                    <div class="quiz-container" id="quiz-wrapper">
-                        
-                        <!-- Step 1 -->
-                        <div class="quiz-step active" data-step="1">
-                            <div class="step-progress">Paso 1 de 3</div>
-                            <h3>¿Cómo sentís tu piel habitualmente durante el día?</h3>
-                            <div class="quiz-options">
-                                <button class="quiz-option-btn" data-value="seca">
-                                    <span class="option-title">Seca / Tirante</span>
-                                    <span class="option-desc">Siento descamación, falta de brillo y tirantez constante.</span>
-                                </button>
-                                <button class="quiz-option-btn" data-value="mixta_grasa">
-                                    <span class="option-title">Mixta a Grasa</span>
-                                    <span class="option-desc">Brillos en zona T (frente, nariz, mentón) o grasitud generalizada.</span>
-                                </button>
-                                <button class="quiz-option-btn" data-value="sensible">
-                                    <span class="option-title">Sensible / Rojeces</span>
-                                    <span class="option-desc">Se irrita fácil, se enrojece con cambios de clima o productos.</span>
-                                </button>
-                                <button class="quiz-option-btn" data-value="madura">
-                                    <span class="option-title">Madura / Con líneas</span>
-                                    <span class="option-desc">Noto pérdida de firmeza, elasticidad y líneas de expresión marcadas.</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Step 2 -->
-                        <div class="quiz-step" data-step="2">
-                            <div class="step-progress">Paso 2 de 3</div>
-                            <h3>¿Cuál es tu principal preocupación o lo que te gustaría mejorar?</h3>
-                            <div class="quiz-options">
-                                <button class="quiz-option-btn" data-value="lineas_arrugas">
-                                    <span class="option-title">Líneas de expresión y Flacidez</span>
-                                    <span class="option-desc">Quiero un efecto lifting, mayor firmeza y rellenar arrugas.</span>
-                                </button>
-                                <button class="quiz-option-btn" data-value="manchas_tono">
-                                    <span class="option-title">Manchas o Tono irregular</span>
-                                    <span class="option-desc">Quiero unificar el color de mi piel y atenuar hiperpigmentaciones.</span>
-                                </button>
-                                <button class="quiz-option-btn" data-value="poros_acne">
-                                    <span class="option-title">Poros abiertos, Puntos negros o Acné</span>
-                                    <span class="option-desc">Quiero limpiar en profundidad, controlar sebo y suavizar poros.</span>
-                                </button>
-                                <button class="quiz-option-btn" data-value="deshidratacion_opacidad">
-                                    <span class="option-title">Deshidratación y Falta de luminosidad</span>
-                                    <span class="option-desc">Siento la piel apagada, cansada y con falta de vitalidad.</span>
-                                </button>
-                            </div>
-                            <div class="quiz-navigation">
-                                <button class="btn btn-outline btn-sm quiz-prev-btn"><i class="fa-solid fa-arrow-left"></i> Anterior</button>
-                            </div>
-                        </div>
-
-                        <!-- Step 3 -->
-                        <div class="quiz-step" data-step="3">
-                            <div class="step-progress">Paso 3 de 3</div>
-                            <h3>¿Cómo es tu rutina de skincare actual en casa?</h3>
-                            <div class="quiz-options">
-                                <button class="quiz-option-btn" data-value="no_tengo">
-                                    <span class="option-title">No tengo rutina</span>
-                                    <span class="option-desc">Solo me lavo la cara con agua o jabón común de ducha.</span>
-                                </button>
-                                <button class="quiz-option-btn" data-value="basica">
-                                    <span class="option-title">Básica</span>
-                                    <span class="option-desc">Uso un limpiador facial y a veces crema hidratante.</span>
-                                </button>
-                                <button class="quiz-option-btn" data-value="intermedia">
-                                    <span class="option-title">Intermedia</span>
-                                    <span class="option-desc">Hago limpieza, hidratación y uso protector solar casi todos los días.</span>
-                                </button>
-                                <button class="quiz-option-btn" data-value="avanzada">
-                                    <span class="option-title">Avanzada / Completa</span>
-                                    <span class="option-desc">Uso limpiador, tónicos, sérums específicos, crema y protector solar diario.</span>
-                                </button>
-                            </div>
-                            <div class="quiz-navigation">
-                                <button class="btn btn-outline btn-sm quiz-prev-btn"><i class="fa-solid fa-arrow-left"></i> Anterior</button>
-                            </div>
-                        </div>
-
-                        <!-- Result Step -->
-                        <div class="quiz-step result-step" data-step="result">
-                            <div class="result-icon"><i class="fa-regular fa-sparkles"></i></div>
-                            <h3>¡Tu diagnóstico personalizado está listo!</h3>
-                            
-                            <div class="result-details">
-                                <div class="result-block">
-                                    <h4><i class="fa-solid fa-heart-pulse"></i> Tu Piel y Objetivo:</h4>
-                                    <p id="result-summary-text">Cargando diagnóstico...</p>
-                                </div>
-                                
-                                <div class="result-block">
-                                    <h4><i class="fa-solid fa-sparkles"></i> Tratamientos Lupe recomendados:</h4>
-                                    <ul id="recommended-treatments-list">
-                                        <!-- Will be filled by JS -->
-                                    </ul>
-                                </div>
-
-                                <div class="result-block">
-                                    <h4><i class="fa-solid fa-droplet"></i> Plan de Skincare sugerido:</h4>
-                                    <p id="recommended-products-text">Cargando recomendación de productos...</p>
-                                </div>
-                            </div>
-
-                            <div class="result-cta-box">
-                                <p>Para armar tu rutina detallada, evaluar tu piel en camilla y adquirir los productos indicados, agenda un asesoramiento profesional presencial.</p>
-                                <button class="btn btn-primary" id="send-quiz-whatsapp-btn">
-                                    <i class="fab fa-whatsapp"></i> Reservar y Enviar Diagnóstico
-                                </button>
-                                <button class="btn btn-outline btn-sm" id="reset-quiz-btn" style="margin-top: 15px;">Realizar el test de nuevo</button>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </section>
