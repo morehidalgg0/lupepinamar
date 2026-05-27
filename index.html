@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lupe Pinamar - Centro de Estética. Especialistas en tratamientos faciales y corporales, limpieza profunda, peeling, dermaplaning, hydralips, microneedling dermapen, bb glow, hilos sólidos y líquidos, y armado de rutina de skincare personalizada en Pinamar.">
+    <meta name="keywords" content="estetica pinamar, limpieza profunda, peeling, dermaplaning, hydralips, dermapen, bb glow, hilos tensores, skincare pinamar, tratamientos faciales">
+    <meta name="author" content="Lupe Pinamar">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lupepinamar.com.ar/">
+    <meta property="og:title" content="Lupe Pinamar | Centro de Estética & Skincare">
+    <meta property="og:description" content="Descubrí tu mejor versión en Pinamar. Tratamientos faciales y corporales avanzados, asesoramiento personalizado y rutinas de skincare a tu medida.">
+    <meta property="og:image" content="assets/hero_bg.png">
+
+    <title>Lupe Pinamar | Centro de Estética & Cuidado Consciente</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="main-header" class="header-floating">
+        <div class="container header-container">
+            <a href="#inicio" class="logo">
+                <span class="logo-lupe">LUPE</span>
+                <span class="logo-sub">PINAMAR</span>
+            </a>
+            
+            <nav id="navbar" class="nav-menu">
+                <ul>
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#tratamientos" class="nav-link">Tratamientos</a></li>
+                    <li><a href="#quiz" class="nav-link">Descubrí tu Rutina</a></li>
+                    <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#nosotras" class="nav-link">Nosotras</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="https://wa.me/5492254459147?text=Hola!%20Me%20gustar%C3%ADa%20agendar%20un%20turno%20para%20un%20tratamiento." target="_blank" rel="noopener" class="btn btn-primary btn-sm header-cta-btn" id="btn-header-reserve">
+                    <i class="fab fa-whatsapp"></i> Reservar Turno
+                </a>
+                <button class="mobile-nav-toggle" aria-label="Abrir menú de navegación" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-bg-overlay" style="background-image: url('assets/hero_bg.png');"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle scroll-reveal">Bienvenida a Lupe Pinamar</span>
+                    <h1 class="hero-title scroll-reveal">El arte de cuidar <br>tu propia piel</h1>
+                    <p class="hero-description scroll-reveal">Ofrecemos tratamientos faciales y corporales de última generación, diseñados para resaltar tu belleza natural en un espacio de calma y bienestar en Pinamar.</p>
+                    <div class="hero-actions scroll-reveal">
+                        <a href="#tratamientos" class="btn btn-secondary">Ver Tratamientos</a>
+                        <a href="https://wa.me/5492254459147?text=Hola!%20Me%20gustar%C3%ADa%20hacer%20una%20consulta%20sobre%20los%20tratamientos." target="_blank" rel="noopener" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i> Asesoramiento
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Features / Values Banner -->
+            <div class="hero-features-bar">
+                <div class="container features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-regular fa-sparkles"></i></div>
+                        <h3>Estética Consciente</h3>
+                        <p>Tratamientos no invasivos y naturales</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-regular fa-heart"></i></div>
+                        <h3>Atención Personalizada</h3>
+                        <p>Evaluamos tu piel de forma única</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-regular fa-map"></i></div>
+                        <h3>En el corazón de Pinamar</h3>
+                        <p>Un refugio de paz para vos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatments Section -->
+        <section id="tratamientos" class="section treatments-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Nuestros Servicios</span>
+                    <h2 class="section-title">Tratamientos a tu medida</h2>
+                    <p class="section-desc">Combinamos tecnología avanzada y cosmética de primer nivel para cuidar de vos. Seleccioná una categoría para ver los detalles.</p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="treatment-filters" id="treatment-filters">
+                    <button class="filter-btn active" data-filter="todos">Todos</button>
+                    <button class="filter-btn" data-filter="limpieza">Limpieza & Exfoliación</button>
+                    <button class="filter-btn" data-filter="avanzado">Facial Avanzado</button>
+                    <button class="filter-btn" data-filter="antiage">Anti-Age & Firmeza</button>
+                    <button class="filter-btn" data-filter="corporal">Corporales</button>
+                </div>
+
+                <!-- Treatments Grid -->
+                <div class="treatments-grid" id="treatments-container">
+                    
+                    <!-- Card 1: Limpieza Profunda -->
+                    <div class="treatment-card" data-category="limpieza">
+                        <div class="treatment-badge">Esencial</div>
+                        <div class="treatment-info">
+                            <h3>Limpieza Profunda</h3>
+                            <p class="treatment-text">Extracción de impurezas, puntos negros y células muertas. Devuelve el brillo y la salud natural a tu rostro preparando la piel para absorber mejor cualquier tratamiento diario.</p>
+                            <ul class="treatment-benefits">
+                                <li><i class="fa-solid fa-check"></i> Desobstrucción de poros</li>
+                                <li><i class="fa-solid fa-check"></i> Renovación e hidratación</li>
+                                <li><i class="fa-solid fa-check"></i> Apto para todo tipo de piel</li>
+                            </ul>
+                            <div class="treatment-footer">
+                                <span class="treatment-duration"><i class="fa-regular fa-clock"></i> 60 min</span>
+                                <a href="https://wa.me/5492254459147?text=Hola!%20Quiero%20consultar%20por%20el%20tratamiento%20de%20Limpieza%20Profunda." target="_blank" class="btn btn-outline btn-sm">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Peeling -->
+                    <div class="treatment-card" data-category="limpieza">
+                        <div class="treatment-badge">Renovación</div>
+                        <div class="treatment-info">
+                            <h3>Peeling Químico / Físico</h3>
+                            <p class="treatment-text">Aplicación de activos controlados para remover las capas externas de la piel. Ideal para tratar manchas, marcas de acné, líneas finas y unificar el tono cutáneo de forma progresiva.</p>
+                            <ul class="treatment-benefits">
+                                <li><i class="fa-solid fa-check"></i> Suaviza la textura de la piel</li>
+                                <li><i class="fa-solid fa-check"></i> Atenúa manchas y secuelas</li>
+                                <li><i class="fa-solid fa-check"></i> Estimula el colágeno nuevo</li>
+                            </ul>
+                            <div class="treatment-footer">
+                                <span class="treatment-duration"><i class="fa-regular fa-clock"></i> 45 min</span>
+                                <a href="https://wa.me/5492254459147?text=Hola!%20Quiero%20consultar%20por%20el%20tratamiento%20de%20Peeling." target="_blank" class="btn btn-outline btn-sm">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Dermaplaning -->
+                    <div class="treatment-card" data-category="limpieza">
+                        <div class="treatment-badge">Piel de Seda</div>
+                        <div class="treatment-info">
+                            <h3>Dermaplaning</h3>
+                            <p class="treatment-text">Exfoliación física mediante un bisturí dermatológico que retira suavemente las células muertas de la epidermis y el vello facial fino (pelusa). Deja una piel extremadamente luminosa.</p>
+                            <ul class="treatment-benefits">
+                                <li><i class="fa-solid fa-check"></i> Absorción máxima de productos</li>
+                                <li><i class="fa-solid fa-check"></i> Maquillaje con acabado perfecto</li>
+                                <li><i class="fa-solid fa-check"></i> Luminosidad inmediata al instante</li>
+                            </ul>
+                            <div class="treatment-footer">
+                                <span class="treatment-duration"><i class="fa-regular fa-clock"></i> 50 min</span>
+                                <a href="https://wa.me/5492254459147?text=Hola!%20Quiero%20consultar%20por%20el%20tratamiento%20de%20Dermaplaning." target="_blank" class="btn btn-outline btn-sm">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Hydralips -->
+                    <div class="treatment-card" data-category="avanzado">
+                        <div class="treatment-badge">Labios Soft</div>
+                        <div class="treatment-info">
+                            <h3>Hydralips</h3>
+                            <p class="treatment-text">Tratamiento de hidratación profunda y regeneración para labios secos o agrietados. Aporta un brillo sutil, define suavemente el contorno y resalta el color natural mediante microagujas sin dolor.</p>
+                            <ul class="treatment-benefits">
+                                <li><i class="fa-solid fa-check"></i> Hidratación extrema inmediata</li>
+                                <li><i class="fa-solid fa-check"></i> Atenúa arrugas de los labios</li>
+                                <li><i class="fa-solid fa-check"></i> Efecto voluminoso y saludable</li>
+                            </ul>
+                            <div class="treatment-footer">
+                                <span class="treatment-duration"><i class="fa-regular fa-clock"></i> 40 min</span>
+                                <a href="https://wa.me/5492254459147?text=Hola!%20Quiero%20consultar%20por%20el%20tratamiento%20de%20Hydralips." target="_blank" class="btn btn-outline btn-sm">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Microneedling / Dermapen -->
+                    <div class="treatment-card" data-category="avanzado">
+                        <div class="treatment-badge">Tendencia</div>
+                        <div class="treatment-info">
+                            <h3>Microneedling (Dermapen)</h3>
+                            <p class="treatment-text">Dispositivo de microagujas ultrafinas que realiza canales microscópicos para introducir principios activos (ácido hialurónico, vitaminas). Estimula fuertemente la elastina y el colágeno.</p>
+                            <ul class="treatment-benefits">
+                                <li><i class="fa-solid fa-check"></i> Reduce poros y cicatrices</li>
+                                <li><i class="fa-solid fa-check"></i> Suaviza arrugas y líneas finas</li>
+                                <li><i class="fa-solid fa-check"></i> Rejuvenecimiento facial global</li>
+                            </ul>
+                            <div class="treatment-footer">
+                                <span class="treatment-duration"><i class="fa-regular fa-clock"></i> 60 min</span>
+                                <a href="https://wa.me/5492254459147?text=Hola!%20Quiero%20consultar%20por%20el%20tratamiento%20de%20Microneedling%20Dermapen." target="_blank" class="btn btn-outline btn-sm">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: BB Glow -->
+                    <div class="treatment-card" data-category="avanzado">
+                        <div class="treatment-badge">Luminosidad</div>
+                        <div class="treatment-info">
+                            <h3>BB Glow</h3>
+                            <p class="treatment-text">Tratamiento coreano que combina microneedling con sueros que contienen una ligera base de maquillaje semipermanente. Aporta una piel de porcelana, unifica el tono y reduce ojeras y rojeces.</p>
+                            <ul class="treatment-benefits">
+                                <li><i class="fa-solid fa-check"></i> Piel efecto 'porcelana' diaria</li>
+                                <li><i class="fa-solid fa-check"></i> Camufla imperfecciones suaves</li>
+                                <li><i class="fa-solid fa-check"></i> Nutrición profunda con brillo</li>
+                            </ul>
+                            <div class="treatment-footer">
+                                <span class="treatment-duration"><i class="fa-regular fa-clock"></i> 75 min</span>
+                                <a href="https://wa.me/5492254459147?text=Hola!%20Quiero%20consultar%20por%20el%20tratamiento%20de%20BB%20Glow." target="_blank" class="btn btn-outline btn-sm">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Hilos Sólidos -->
+                    <div class="treatment-card" data-category="antiage">
+                        <div class="treatment-badge">Lifting sin Cirugía</div>
+                        <div class="treatment-info">
+                            <h3>Hilos Sólidos (Colágeno)</h3>
+                            <p class="treatment-text">Hilos reabsorbibles de colágeno y proteínas que se disuelven sobre la piel mediante un suero activador. Rellenan arrugas, líneas de expresión y aportan firmeza inmediata de forma indolora.</p>
+                            <ul class="treatment-benefits">
+                                <li><i class="fa-solid fa-check"></i> Sin agujas ni tiempo de recuperación</li>
+                                <li><i class="fa-solid fa-check"></i> Relleno inmediato de arrugas</li>
+                                <li><i class="fa-solid fa-check"></i> Aporte masivo de colágeno</li>
+                            </ul>
+                            <div class="treatment-footer">
+                                <span class="treatment-duration"><i class="fa-regular fa-clock"></i> 60 min</span>
+                                <a href="https://wa.me/5492254459147?text=Hola!%20Quiero%20consultar%20por%20el%20tratamiento%20de%20Hilos%20S%C3%B3lidos." target="_blank" class="btn btn-outline btn-sm">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8: Hilos Líquidos -->
+                    <div class="treatment-card" data-category="antiage">
+                        <div class="treatment-badge">Firmeza 3D</div>
+                        <div class="treatment-info">
+                            <h3>Hilos Líquidos</h3>
+                            <p class="treatment-text">Tratamiento tensor a base de péptidos y activos reafirmantes concentrados que crean una malla tensora invisible sobre la piel. Combate la flacidez facial del óvalo de la cara y el cuello.</p>
+                            <ul class="treatment-benefits">
+                                <li><i class="fa-solid fa-check"></i> Efecto tensor y reafirmante</li>
+                                <li><i class="fa-solid fa-check"></i> Define el contorno del rostro</li>
+                                <li><i class="fa-solid fa-check"></i> Hidratación y elasticidad</li>
+                            </ul>
+                            <div class="treatment-footer">
+                                <span class="treatment-duration"><i class="fa-regular fa-clock"></i> 50 min</span>
+                                <a href="https://wa.me/5492254459147?text=Hola!%20Quiero%20consultar%20por%20el%20tratamiento%20de%20Hilos%20L%C3%ADquidos." target="_blank" class="btn btn-outline btn-sm">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 9: Tratamiento Anti-Age -->
+                    <div class="treatment-card" data-category="antiage">
+                        <div class="treatment-badge">Juventud</div>
+                        <div class="treatment-info">
+                            <h3>Tratamientos Anti-Age</h3>
+                            <p class="treatment-text">Sesiones integrales personalizadas que combinan aparatología (alta frecuencia, radiofrecuencia o espátula) con activos antienvejecimiento premium para revitalizar pieles maduras o cansadas.</p>
+                            <ul class="treatment-benefits">
+                                <li><i class="fa-solid fa-check"></i> Estimulación celular profunda</li>
+                                <li><i class="fa-solid fa-check"></i> Mejora la luminosidad y turgencia</li>
+                                <li><i class="fa-solid fa-check"></i> Diseño adaptado a tus necesidades</li>
+                            </ul>
+                            <div class="treatment-footer">
+                                <span class="treatment-duration"><i class="fa-regular fa-clock"></i> 70 min</span>
+                                <a href="https://wa.me/5492254459147?text=Hola!%20Quiero%20consultar%20por%20los%20Tratamientos%20Anti-Age." target="_blank" class="btn btn-outline btn-sm">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 10: Tratamientos Corporales -->
+                    <div class="treatment-card" data-category="corporal">
+                        <div class="treatment-badge">Bienestar</div>
+                        <div class="treatment-info">
+                            <h3>Tratamientos Corporales</h3>
+                            <p class="treatment-text">Planes diseñados a medida del cuerpo: masajes tensores, reductores, drenaje linfático manual y exfoliación corporal nutritiva para sentirte renovada, ligera y tonificada.</p>
+                            <ul class="treatment-benefits">
+                                <li><i class="fa-solid fa-check"></i> Reducción y moldeado corporal</li>
+                                <li><i class="fa-solid fa-check"></i> Combate la celulitis y flacidez</li>
+                                <li><i class="fa-solid fa-check"></i> Alivia tensiones y desintoxica</li>
+                            </ul>
+                            <div class="treatment-footer">
+                                <span class="treatment-duration"><i class="fa-regular fa-clock"></i> 60 - 90 min</span>
+                                <a href="https://wa.me/5492254459147?text=Hola!%20Quiero%20consultar%20por%20los%20Tratamientos%20Corporales." target="_blank" class="btn btn-outline btn-sm">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Skincare Routine Quiz Section -->
+        <section id="quiz" class="section quiz-section">
+            <div class="container">
+                <div class="quiz-box">
+                    <div class="quiz-header">
+                        <span class="quiz-tag">Test Interactivo</span>
+                        <h2>Descubrí tu rutina y tratamientos ideales</h2>
+                        <p>Respondé estas 3 preguntas rápidas y nuestro sistema te recomendará los tratamientos de Lupe Pinamar y productos que mejor se adaptan a tu tipo de piel.</p>
+                    </div>
+
+                    <div class="quiz-container" id="quiz-wrapper">
+                        
+                        <!-- Step 1 -->
+                        <div class="quiz-step active" data-step="1">
+                            <div class="step-progress">Paso 1 de 3</div>
+                            <h3>¿Cómo sentís tu piel habitualmente durante el día?</h3>
+                            <div class="quiz-options">
+                                <button class="quiz-option-btn" data-value="seca">
+                                    <span class="option-title">Seca / Tirante</span>
+                                    <span class="option-desc">Siento descamación, falta de brillo y tirantez constante.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="mixta_grasa">
+                                    <span class="option-title">Mixta a Grasa</span>
+                                    <span class="option-desc">Brillos en zona T (frente, nariz, mentón) o grasitud generalizada.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="sensible">
+                                    <span class="option-title">Sensible / Rojeces</span>
+                                    <span class="option-desc">Se irrita fácil, se enrojece con cambios de clima o productos.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="madura">
+                                    <span class="option-title">Madura / Con líneas</span>
+                                    <span class="option-desc">Noto pérdida de firmeza, elasticidad y líneas de expresión marcadas.</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="quiz-step" data-step="2">
+                            <div class="step-progress">Paso 2 de 3</div>
+                            <h3>¿Cuál es tu principal preocupación o lo que te gustaría mejorar?</h3>
+                            <div class="quiz-options">
+                                <button class="quiz-option-btn" data-value="lineas_arrugas">
+                                    <span class="option-title">Líneas de expresión y Flacidez</span>
+                                    <span class="option-desc">Quiero un efecto lifting, mayor firmeza y rellenar arrugas.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="manchas_tono">
+                                    <span class="option-title">Manchas o Tono irregular</span>
+                                    <span class="option-desc">Quiero unificar el color de mi piel y atenuar hiperpigmentaciones.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="poros_acne">
+                                    <span class="option-title">Poros abiertos, Puntos negros o Acné</span>
+                                    <span class="option-desc">Quiero limpiar en profundidad, controlar sebo y suavizar poros.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="deshidratacion_opacidad">
+                                    <span class="option-title">Deshidratación y Falta de luminosidad</span>
+                                    <span class="option-desc">Siento la piel apagada, cansada y con falta de vitalidad.</span>
+                                </button>
+                            </div>
+                            <div class="quiz-navigation">
+                                <button class="btn btn-outline btn-sm quiz-prev-btn"><i class="fa-solid fa-arrow-left"></i> Anterior</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="quiz-step" data-step="3">
+                            <div class="step-progress">Paso 3 de 3</div>
+                            <h3>¿Cómo es tu rutina de skincare actual en casa?</h3>
+                            <div class="quiz-options">
+                                <button class="quiz-option-btn" data-value="no_tengo">
+                                    <span class="option-title">No tengo rutina</span>
+                                    <span class="option-desc">Solo me lavo la cara con agua o jabón común de ducha.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="basica">
+                                    <span class="option-title">Básica</span>
+                                    <span class="option-desc">Uso un limpiador facial y a veces crema hidratante.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="intermedia">
+                                    <span class="option-title">Intermedia</span>
+                                    <span class="option-desc">Hago limpieza, hidratación y uso protector solar casi todos los días.</span>
+                                </button>
+                                <button class="quiz-option-btn" data-value="avanzada">
+                                    <span class="option-title">Avanzada / Completa</span>
+                                    <span class="option-desc">Uso limpiador, tónicos, sérums específicos, crema y protector solar diario.</span>
+                                </button>
+                            </div>
+                            <div class="quiz-navigation">
+                                <button class="btn btn-outline btn-sm quiz-prev-btn"><i class="fa-solid fa-arrow-left"></i> Anterior</button>
+                            </div>
+                        </div>
+
+                        <!-- Result Step -->
+                        <div class="quiz-step result-step" data-step="result">
+                            <div class="result-icon"><i class="fa-regular fa-sparkles"></i></div>
+                            <h3>¡Tu diagnóstico personalizado está listo!</h3>
+                            
+                            <div class="result-details">
+                                <div class="result-block">
+                                    <h4><i class="fa-solid fa-heart-pulse"></i> Tu Piel y Objetivo:</h4>
+                                    <p id="result-summary-text">Cargando diagnóstico...</p>
+                                </div>
+                                
+                                <div class="result-block">
+                                    <h4><i class="fa-solid fa-sparkles"></i> Tratamientos Lupe recomendados:</h4>
+                                    <ul id="recommended-treatments-list">
+                                        <!-- Will be filled by JS -->
+                                    </ul>
+                                </div>
+
+                                <div class="result-block">
+                                    <h4><i class="fa-solid fa-droplet"></i> Plan de Skincare sugerido:</h4>
+                                    <p id="recommended-products-text">Cargando recomendación de productos...</p>
+                                </div>
+                            </div>
+
+                            <div class="result-cta-box">
+                                <p>Para armar tu rutina detallada, evaluar tu piel en camilla y adquirir los productos indicados, agenda un asesoramiento profesional presencial.</p>
+                                <button class="btn btn-primary" id="send-quiz-whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i> Reservar y Enviar Diagnóstico
+                                </button>
+                                <button class="btn btn-outline btn-sm" id="reset-quiz-btn" style="margin-top: 15px;">Realizar el test de nuevo</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skincare Products Showcase -->
+        <section id="productos" class="section products-section">
+            <div class="container">
+                <div class="section-grid">
+                    <div class="products-text-block">
+                        <span class="section-subtitle">Skincare en Casa</span>
+                        <h2 class="section-title">Productos Premium & Armado de Rutina</h2>
+                        <p>Los tratamientos en gabinete se potencian con los cuidados diarios. En Lupe Pinamar te brindamos asesoramiento integral y el armado de tu rutina paso a paso con productos de alta calidad formulados para cada necesidad cosmética.</p>
+                        
+                        <div class="steps-list">
+                            <div class="step-item">
+                                <span class="step-num">01</span>
+                                <div>
+                                    <h4>Evaluación inicial</h4>
+                                    <p>Analizamos las condiciones actuales de tu cutis, sensibilidad y nivel de hidratación.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-num">02</span>
+                                <div>
+                                    <h4>Selección de activos</h4>
+                                    <p>Indicamos los mejores ácidos, vitaminas o péptidos para tus objetivos específicos.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-num">03</span>
+                                <div>
+                                    <h4>Seguimiento de rutina</h4>
+                                    <p>Acompañamos tu proceso y adaptamos la rutina en base a la respuesta natural de tu piel.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/5492254459147?text=Hola!%20Me%20interesa%20el%20asesoramiento%20y%20productos%20de%20skincare." target="_blank" class="btn btn-primary" style="margin-top: 20px;">
+                            <i class="fab fa-whatsapp"></i> Pedir Asesoramiento
+                        </a>
+                    </div>
+                    <div class="products-visual-block">
+                        <div class="image-wrapper-decor">
+                            <img src="assets/skincare_products.png" alt="Productos de skincare y serums en Lupe Pinamar" class="featured-products-img">
+                            <div class="floating-badge-decor">
+                                <span class="badge-number">100%</span>
+                                <span class="badge-text">Personalizado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="nosotras" class="section about-section">
+            <div class="container">
+                <div class="section-grid grid-reverse">
+                    <div class="about-text-block">
+                        <span class="section-subtitle">Sobre Lupe Pinamar</span>
+                        <h2 class="section-title">Un espacio pensado exclusivamente para tu bienestar</h2>
+                        <p>Nuestra misión es ir más allá de la estética convencional. Buscamos brindarte un espacio de calma donde puedas desconectarte de la rutina diaria mientras cuidamos tu piel con la máxima delicadeza y profesionalismo.</p>
+                        <p>Cada rostro y cada cuerpo cuenta una historia única. Por eso, no creemos en las soluciones genéricas: diseñamos tratamientos a la medida exacta de tus necesidades, priorizando la salud y el equilibrio biológico de tu piel.</p>
+                        
+                        <div class="info-badges">
+                            <div class="info-badge-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Pinamar, Buenos Aires</span>
+                            </div>
+                            <div class="info-badge-item">
+                                <i class="fa-solid fa-certificate"></i>
+                                <span>Profesionales Certificadas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual-block">
+                        <div class="image-wrapper-decor">
+                            <img src="assets/facial_treatment.png" alt="Tratamiento facial en Lupe Pinamar" class="about-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section id="contacto" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Contacto</span>
+                    <h2 class="section-title">Escribinos y reservá tu momento</h2>
+                    <p class="section-desc">Estamos ubicadas en Pinamar. Consultanos por WhatsApp o completá tus datos para agendar tu consulta personalizada.</p>
+                </div>
+
+                <div class="contact-grid">
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-info-panel">
+                        <div class="contact-info-card">
+                            <h3>Canales de Comunicación</h3>
+                            <ul class="contact-details-list">
+                                <li>
+                                    <div class="detail-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                    <div class="detail-content">
+                                        <h4>WhatsApp / Reservas</h4>
+                                        <p><a href="https://wa.me/5492254459147?text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener">2254 459147</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="detail-content">
+                                        <h4>Ubicación</h4>
+                                        <p>Centro de Pinamar, Buenos Aires, Argentina</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="detail-icon"><i class="fa-regular fa-clock"></i></div>
+                                    <div class="detail-content">
+                                        <h4>Horarios de Atención</h4>
+                                        <p>Lunes a Sábado: 10:00 a 20:00 hs (Con turno previo)</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <div class="social-links-title">Seguinos en nuestras redes</div>
+                            <div class="social-links">
+                                <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Siganos en Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Siganos en Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form & Simulated Map -->
+                    <div class="contact-visual-panel">
+                        <div class="simulated-map-container">
+                            <div class="map-overlay-content">
+                                <div class="map-marker-pin"><i class="fa-solid fa-location-pin"></i></div>
+                                <h4>Lupe Pinamar</h4>
+                                <p>Calle Principal, Pinamar</p>
+                                <a href="https://wa.me/5492254459147?text=Hola!%20Me%20gustar%C3%ADa%20saber%20la%20direcci%C3%B3n%20exacta%20del%20centro%20en%20Pinamar." target="_blank" class="btn btn-primary btn-xs">¿Cómo llegar?</a>
+                            </div>
+                            <!-- Styled background simulation of a map -->
+                            <div class="simulated-map-bg">
+                                <div class="map-road road-h-1"></div>
+                                <div class="map-road road-h-2"></div>
+                                <div class="map-road road-v-1"></div>
+                                <div class="map-road road-v-2"></div>
+                                <div class="map-park park-1"></div>
+                                <div class="map-water water-1"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#inicio" class="logo">
+                    <span class="logo-lupe">LUPE</span>
+                    <span class="logo-sub">PINAMAR</span>
+                </a>
+                <p>Estética & Cuidado Consciente. Un espacio en Pinamar dedicado a resaltar tu luminosidad y potenciar tu bienestar.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#tratamientos">Tratamientos</a></li>
+                    <li><a href="#quiz">Diagnóstico / Quiz</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-treatments">
+                <h4>Destacados</h4>
+                <ul>
+                    <li><a href="#tratamientos">Limpieza Profunda</a></li>
+                    <li><a href="#tratamientos">Hydralips</a></li>
+                    <li><a href="#tratamientos">Dermapen</a></li>
+                    <li><a href="#tratamientos">Hilos Sólidos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; 2026 Lupe Pinamar. Desarrollado por Morena Hidalgo.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Sticky Whatsapp Button -->
+    <a href="https://wa.me/5492254459147?text=Hola%20Lupe%20Pinamar!%20Me%20comunico%20desde%20la%20p%C3%A1gina%20web%20para%20realizar%20una%20consulta." target="_blank" rel="noopener" class="whatsapp-sticky" aria-label="Chatear por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">¿Hablamos?</span>
+    </a>
+
+    <!-- Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>
